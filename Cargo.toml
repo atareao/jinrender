@@ -5,8 +5,10 @@ edition = "2021"
 description = "A simple command-line tool for rendering Jinja2 templates with environment variables"
 license = "MIT"
 repository = "https://github.com/atareao/jinrender"
+homepage = "https://github.com/atareao/jinrender"
 keywords = ["jinja", "template", "cli", "environment", "rendering"]
 categories = ["command-line-utilities", "template-engine"]
+readme = "README.md"
 
 [[bin]]
 name = "jinrender"
