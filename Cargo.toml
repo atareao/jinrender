@@ -1,8 +1,24 @@
 [package]
 name = "jinrender"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
+description = "A simple command-line tool for rendering Jinja2 templates with environment variables"
+license = "MIT"
+repository = "https://github.com/atareao/jinrender"
+keywords = ["jinja", "template", "cli", "environment", "rendering"]
+categories = ["command-line-utilities", "template-engine"]
+
+[[bin]]
+name = "jinrender"
+path = "src/main.rs"
+
+[lib]
+name = "jinrender"
+path = "src/lib.rs"
 
 [dependencies]
 clap = { version = "4.5.58", features = ["cargo"] }
 minijinja = "2.15.1"
+
+[dev-dependencies]
+tempfile = "3.8"
